@@ -62,4 +62,53 @@ Dockerfile is a file where you provide the steps to build your Docker Image.
 An image is a read-only template with instructions for creating a Docker container. Often, an image is based on another image, with some additional customization. For example, you may build an image which is based on the ubuntu image, but installs the Apache web server and your application, as well as the configuration details needed to make your application run.
 
 You might create your own images or you might only use those created by others and published in a registry. To build your own image, you create a Dockerfile with a simple syntax for defining the steps needed to create the image and run it. Each instruction in a Dockerfile creates a layer in the image. When you change the Dockerfile and rebuild the image, only those layers which have changed are rebuilt. This is part of what makes images so lightweight, small, and fast, when compared to other virtualization technologies.
+
+## INSTALL DOCKER
+A very detailed instructions to install Docker are provide in the below link
+
+https://docs.docker.com/get-docker/
+
+For Demo,
+
+You can create an Ubuntu EC2 Instance on AWS and run the below commands to install docker.
+        sudo apt update
+        sudo apt install docker.io -y
+
+## Start Docker daemon
+You use the below command to verify if the docker daemon is actually started and Active
+
+        sudo systemctl status docker
+        
+If you notice that the docker daemon is not running, you can start the daemon using the below command
+
+        sudo systemctl start docker
+
+## Grant Access to your user to run docker commands
+To grant access to your user to run the docker command, you should add the user to the Docker Linux group. Docker group is create by default when docker is installed.
+
+        sudo usermod -aG docker ubuntu
+        
+In the above command ubuntu is the name of the user, you can change the username appropriately.
+
+NOTE: : You need to logout and login back for the changes to be reflecte
+
+### Docker is Installed, up and running 🥳🥳
+Use the same command again, to verify that docker is up and running.
+        docker run hello-world
+
+### Login to Docker [Create an account with https://hub.docker.com/]
+        docker login
+
+### Build your first Docker Image
+You need to change the username accoringly in the below command
+        docker build -t docker_image:latest .
+
+### Verify Docker Image is created
+            docker images
+
+### Run your First Docker Container
+            docker run -it docker-image
+
+### Push the Image to DockerHub and share it with the world
+            docker push docker-image
     
