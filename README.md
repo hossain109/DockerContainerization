@@ -1,7 +1,7 @@
 # DockerContainerization
 Docker installation, Creation image and Containerization
 
-##Files and Folders that containers use from host operating system
+## Files and Folders that containers use from host operating system
     
         /bin: contains binary executable files, such as the ls, cp, and ps commands.
 
