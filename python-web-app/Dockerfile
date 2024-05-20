@@ -1,19 +1,14 @@
-FROM python:3.9-slim
+FROM ubuntu
 
 WORKDIR /app
 
 COPY requirements.txt /app
-
-RUN pip install --no-cache-dir -r requirements.txt
-
 COPY devops /app
 
-EXPOSE 5000
+RUN apt-get update && \
+    apt-get install -y python3 python3-pip && \
+    pip install -r requirements.txt && \
+    cd devops
 
-ENV FLASK_APP=app.py
-
-CMD ["flask", "run", "--host=0.0.0.0"]
-
-
-
-
+ENTRYPOINT ["python3"]
+CMD ["manage.py", "runserver", "0.0.0.0:8000"]
