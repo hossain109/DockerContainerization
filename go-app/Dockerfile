@@ -12,6 +12,6 @@ RUN CGO_ENABLED=0 go build -o /app .
 #####################
 FROM scratch
 #copy the compile binary from the build stage
-COPY /app /app
+COPY --from=build /app /app
 #set the entry point for the container to the binary
 ENTRYPOINT [ "/app" ] 
