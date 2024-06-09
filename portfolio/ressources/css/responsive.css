@@ -1,0 +1,307 @@
+/*xl dievice*/
+@media only screen and (max-width: 1200px){
+	/*my services*/
+	.my_services .service_depcription_left{
+		width: 77%;
+	}
+	.my_services .service_depcription_right{
+		width: 77%;
+	}
+	/*my work*/
+	.my_work .container .box .overlay .project_title{
+		top: 65%;
+	}
+	/*my work*/
+	.my_work .container .box .overlay .project_title{
+		top: 70%;
+	}
+	/*contact*/
+	.contact_me .address_details{
+		margin-left: 0;
+		margin-top: 2%;
+		width: 100%;
+	}
+	.contact_me .email_details{
+		margin-left: 0;
+		margin-top: 2%;
+		width: 100%;
+	}
+	.contact_me .phone_details{
+		margin-left: 0;
+		margin-top: 2%;
+		width: 100%;
+	}
+}
+/*desktop device*/
+@media only screen and (max-width: 1024px){
+	header{
+		height: 85vh;
+	}
+	#header span{
+		margin-left: 16rem;
+	}
+	.open_nav{
+		left: 4.9rem;
+	}
+	/*.personelle_text_box{
+		transform: translate(-50%,-15%);
+	}*/
+	/*header*/
+	.personelle_text_box{
+		-webkit-transform: translate(-50%,-60%);
+		transform: translate(-50%,-60%);
+	}
+	.personelle_text_box h1{
+		font-size: 4rem;
+		line-height: 1rem;
+	}
+	/*hobbies*/
+	.about_me .hobbies_interests .hobbies_item{
+		height: 8rem;
+		width: 8rem;
+	}
+	/*my services*/
+	.my_services .service_depcription_left{
+		width: 77%;
+	}
+	.my_services .service_icon_left .fas{
+		padding: 1.5rem;
+	}
+	.my_services .service_depcription_right{
+		width: 77%;
+	}
+	.my_services .service_icon_right .fas{
+		padding: 1.5rem;
+	}
+}
+/*medium device*/
+@media only screen and (max-width: 980px){
+	/*header*/
+	.personelle_text_box{
+		-webkit-transform: translate(-50%,-70%);
+		transform: translate(-50%,-70%);
+	}
+	.personelle_text_box h1{
+		font-size: 4rem;
+		line-height: 1rem;
+	}
+	.about_me{
+		margin: 0 9rem;
+	}
+	.about_me .about_wrap .download_cv{
+		padding: 1rem 3rem;
+	}
+	.resume{
+		margin: 2rem 9rem;
+	}
+	/*services*/
+	.my_services{
+		margin: 2rem 9rem;
+	}
+	/*skill*/
+	.skill{
+		margin: 2rem 9rem;
+	}
+	/*work section*/
+	.my_work{
+		margin: 2rem 9rem;
+	}
+	/*contact*/
+	.contact_me{
+		margin: 2rem 9rem;
+	}
+	/*stiky*/
+	.stiky-nav .logo{
+		left: 4%;
+	}
+
+}
+/*small device*/
+@media only screen and (max-width: 768px){
+	h2{
+		font-size: 3rem;
+	}
+	h3{
+		font-size: 2rem;
+	}
+	#header span{
+		margin-left: 0;
+	}
+	/*header*/
+	.personelle_text_box{
+		-webkit-transform: translate(-50%,-80%);
+		transform: translate(-50%,-80%);
+	}
+	.personelle_text_box h1{
+		font-size: 3rem;
+		line-height: 1rem;
+	}
+	.personelle_text_box h6.poste{
+		margin-top: 0;
+	}
+	/*about me*/
+	.hobbies_interests .title_hobbies {
+    	margin-top: 3rem;
+	}
+	.small_device_biodata {
+    	width: 100%;
+	}
+	.small_device_hobbies{
+		width: 100%;
+		margin-left: 0;
+	}
+	.small_device_hobbies .circle{
+		width: 31%;
+		margin-left: 0;
+	}
+	/*resume*/
+	.resume .experience_box{
+		width: 100%;
+	}
+	/*skill*/
+	.small_device_skill{
+		width: 31.8%;
+	}
+	svg.radial-progress text{
+		font-size: 1.7rem;
+	}
+	/*my work*/
+	.my_work .data_filter .btn_mixup {
+	    font-size: 1.2rem;
+	    padding: 0.6rem 0.6rem;
+	}
+	.small_device_work{
+		width: 30.8%;
+	}
+	.my_work .container .box .overlay .project_title{
+		font-size: 1.4rem;
+	}
+	.my_work .container .box .overlay .text_icon{
+		font-size: 2.8rem;
+	}
+	.my_services .service_depcription_left h6{
+		text-align: left;
+	}
+	.my_services .service_icon_left {
+    	float: left;
+	}
+	.my_services .service_depcription_left {
+    	float: right;
+	}
+	.my_services .service_icon_right{
+		text-align: right;
+	}
+	.my_services .service_icon_right .fas{
+		margin-left: -1rem;
+	}
+	/*disable main menu*/
+	#header span#openNavId{
+		display: none;
+	}
+	/*display menu in small device*/
+	span.mobile_openNavId{
+		display: block;
+	}
+	/*stiky menu hidein*/
+	div#my_stiky.stiky-nav.stiky>ul.main_nav>li>a{
+		display: none;
+	}
+}
+/*xs device*/
+@media only screen and (max-width: 480px){
+	/*about me*/
+	.about_me{
+		margin: 0 2rem;
+	}
+	.personelle_text_box{
+		width: 20rem;
+	}
+	.personelle_text_box h1 {
+	    font-size: 2rem;
+	    line-height: 1rem;
+	}
+	.biodata_item{
+		width: 32%;
+	}
+	.xs_device_data{
+		width: 64%;
+	}
+	h6{
+		font-size: 1.8rem;
+	}
+	h2{
+		line-height: 3rem;
+	}
+	.about_me .about_wrap .download_cv{
+		padding: 1rem 3rem;
+	}
+	.small_device_hobbies .circle {
+	    width: 49%;
+	    margin-top: 2rem;
+	}
+	.small_device_hobbies .circle{
+
+	}
+	.resume{
+		margin: 2rem 4rem;
+	}
+	/*services*/
+	.my_services{
+		margin: 2rem 4rem;
+	}
+	.my_services .service_depcription_left h6{
+		text-align: left;
+	}
+	.my_services .service_icon_left {
+    	float: left;
+	}
+	.my_services .service_depcription_left {
+    	float: right;
+	}
+	.my_services .service_icon_right{
+		text-align: right;
+	}
+	.my_services .service_icon_right .fas{
+		margin-left: -1rem;
+	}
+	/*skill*/
+	.skill{
+		margin: 2rem 4rem;
+	}
+	.small_device_skill {
+    	width: 50%;
+	}
+	svg.radial-progress{
+		max-width: 12rem;
+	}
+	/*work section*/
+	.my_work{
+		margin: 2rem 4rem;
+	}
+	.small_device_work {
+    	width: 49.8%;
+	}
+	.my_work .data_filter .btn_mixup {
+	    font-size: 1rem;
+	    padding: 0.4rem 0.4rem;
+	}
+	/*contact*/
+	.contact_me{
+		margin: 2rem 4rem;
+	}
+	.contact_me .address_details{
+		margin-top: 0;
+		margin-left: 2rem;
+		width: 48%;
+	}
+	.contact_me .email_details{
+		margin-top: 0;
+		margin-left: 2rem;
+		width: 48%;
+	}
+	.contact_me .phone_details{
+		margin-top: 0;
+		margin-left: 2rem;
+		width: 48%;
+	}
+}
