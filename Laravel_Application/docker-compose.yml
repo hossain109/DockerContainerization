@@ -9,8 +9,8 @@ services:
     networks:
       - internal
     volumes:
-      - ./application/:/var/www/html/
-      - ./logs/nginx:/var/log/nginx/
+      - .:/application/:/var/www/html/
+      - .:/logs/nginx:/var/log/nginx/
     container_name: nginx
   php:
     build:
@@ -19,8 +19,8 @@ services:
     networks:
       - internal
     volumes:
-      - ./application/:/var/www/html/
-      - ./logs/php.log:/var/log/fpm-php.www.log
+      - .:/application/:/var/www/html/
+      - .:/logs/php.log:/var/log/fpm-php.www.log
     container_name: php
     expose:
       - "9000"
