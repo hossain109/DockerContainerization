@@ -1,0 +1,1 @@
+ 511  docker build --build-arg search_text="My Book Store" --build-arg replace_text="Chris Store" -t my-sed-container .
