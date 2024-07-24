@@ -1,1 +1,17 @@
- 511  docker build --build-arg search_text="My Book Store" --build-arg replace_text="Chris Store" -t my-sed-container .
+docker build --build-arg search_text="My Book Store" --build-arg replace_text="Chris Store" -t my-sed-container .
+
+
+sudo docker build -f Dockerfile.httpd -t httpd-image .
+
+docker build -t my-nginx-image --build-arg TITLE="My Custom Title" --build-arg IMAGE="custom.png" .
+
+
+sudo docker build -f Dockerfile.httpd -t httpd-image --build-arg TITLE="My Custom Title" --build-arg IMAGE="dev.png" --build-arg NOM="Chare Thomas" .
+
+
+docker build -f Dockerfile.httpd --build-arg search_text="TITLE" --build-arg replace_text="Bienvenu"
+--build-arg search_text="dev.png" --build-arg replace_text="greta.jpeg" --build-arg search_text="NOM" --build-arg replace_text="HOSSAIN"
+ -t httpd-image .
+
+
+ docker run -e TITLE="My Custom Title" -e IMAGE="dev.png" my-image
